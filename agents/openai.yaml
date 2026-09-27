@@ -1,7 +1,7 @@
 interface:
   display_name: "紧凑技术汇报 · Dense Tech Brief"
-  short_description: "制作高密度技术汇报 PPT：紧凑灰底条目、源码调用树、能力矩阵与讲解备注"
+  short_description: "紧凑红灰技术汇报：总览、阶段流程、API 中文释义与共用优先的测试矩阵"
   icon_large: "./assets/preview.png"
-  default_prompt: "使用 $artifact-template-dense-tech-brief，将提供的材料整理为高信息密度、调用关系清楚的技术汇报 PPT，沿用紧凑灰底条目、红色标题和淡黄重点，并补充讲解备注。"
+  default_prompt: "使用 $artifact-template-dense-tech-brief，沿用红灰淡黄紧凑版式，先用阶段与责任层画总览，再展开具体 API 的作用和调用条件，最后按执行路径列共用优先的测试表，并在备注保留源码依据。"
 policy:
   allow_implicit_invocation: true

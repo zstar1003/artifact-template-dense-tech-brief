@@ -1,0 +1,4 @@
+interface:
+  display_name: "技术流程与 API 汇报"
+  short_description: "把源码调用链讲成紧凑技术 PPT：阶段流程、接口释义、引擎差异与测试覆盖表"
+  default_prompt: "使用 $technical-flow-brief，依据提供的源码或技术材料制作总览、细节展开和 API 测试总表，讲清每层职责、调用条件、资源与数据流，并保留源码依据和讲解备注。"

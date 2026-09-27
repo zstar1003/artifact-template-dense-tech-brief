@@ -1,0 +1,32 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs/promises';
+import {buildMatrix} from './api-matrix.mjs';
+const input=JSON.parse(await fs.readFile(new URL('../assets/matrix-example.json',import.meta.url),'utf8'));
+const snapshot=JSON.stringify(input);
+const result=buildMatrix(input);
+assert.deepEqual(result.rows.map(r=>r.api),['ExampleContextGet','ExampleContextCreate','ExampleBufferDescribe','ExampleLaunchKernel','ExampleRemoteSubmit','ExampleDrainQueue','ExampleDebugProbe']);
+assert.deepEqual(result.counts,{shared:2,partial:1,'specific:gpu':1,'specific:remote':1,special:1,unverified:1});
+assert.deepEqual(result.rows[1].marks,['✓','✓','✓']);
+assert.ok(result.rows[1].cells.every(c=>c.condition==='域上下文不存在时'));
+assert.deepEqual(result.rows.at(-1).marks,['待核','待核','待核']);
+assert.equal(JSON.stringify(input),snapshot,'Pure helper must not mutate input');
+function reject(change,pattern){const data=structuredClone(input);change(data);assert.throws(()=>buildMatrix(data),pattern);}
+reject(d=>d.entries.push(d.entries[0]),/Duplicate API/);
+reject(d=>d.scenarios.push(d.scenarios[0]),/Duplicate scenario/);
+reject(d=>d.entries[0].coverage.gpu.status='maybe',/invalid status/);
+reject(d=>delete d.entries[0].coverage.cpu,/coverage keys/);
+reject(d=>d.entries[0].coverage.extra={},/coverage keys/);
+reject(d=>d.entries[0].coverage.gpu.evidence=[],/needs path evidence/);
+reject(d=>d.entries[0].coverage.cpu.evidence=[],/needs path evidence/);
+reject(d=>d.entries[0].coverage.gpu.condition='',/condition/);
+reject(d=>d.entries[0].purpose='',/purpose/);
+reject(d=>d.entries[0].kind='hardware-magic',/invalid kind/);
+reject(d=>d.entries[0].special='yes',/boolean/);
+reject(d=>d.scenarios.length=1,/At least two/);
+const allSpecial=structuredClone(input);allSpecial.entries[1].special=true;
+assert.equal(buildMatrix(allSpecial).rows.find(r=>r.api==='ExampleContextGet').group,'shared','All-checked rows remain at the top even when conditional');
+const unknown=structuredClone(input);unknown.entries[1].coverage.gpu={status:'unverified',condition:'该模式缺少路径证据'};
+assert.equal(buildMatrix(unknown).rows.find(r=>r.api==='ExampleContextGet').group,'unverified');
+const unused=structuredClone(input);unused.entries[1].coverage=Object.fromEntries(input.scenarios.map(s=>[s.id,{status:'not-used',condition:'所选路径绕过该接口',evidence:['mock/branch.cc:1-9']}]))
+assert.equal(buildMatrix(unused).rows.at(-1).group,'not-in-scope');
+console.log('PASS: ordering, conditional common APIs, unknown handling, evidence, schema and immutability');

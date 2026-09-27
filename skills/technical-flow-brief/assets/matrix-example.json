@@ -1,0 +1,67 @@
+{
+  "scope": "虚构的任务执行服务；仅展示矩阵结构，不是任何产品的调用结论。",
+  "baseline": "FICTIONAL / illustrative-only；mock/*.cc 是虚构证据占位，真实任务必须替换。",
+  "scenarios": [
+    {"id":"cpu","label":"CPU 路径"},
+    {"id":"gpu","label":"GPU 路径"},
+    {"id":"remote","label":"远端路径"}
+  ],
+  "entries": [
+    {
+      "owner":"ExampleRuntime","kind":"runtime-api","category":"执行控制","api":"ExampleLaunchKernel","purpose":"向 GPU 执行队列提交示例 Kernel","test":"核对队列、参数与完成事件",
+      "coverage":{
+        "cpu":{"status":"not-used","condition":"CPU 分支直接执行函数","evidence":["mock/dispatch.cc:20-27"]},
+        "gpu":{"status":"used","condition":"选择 GPU 路径且 Kernel 已注册","evidence":["mock/dispatch.cc:28-36"]},
+        "remote":{"status":"not-used","condition":"远端分支提交 RPC 请求","evidence":["mock/dispatch.cc:37-45"]}
+      }
+    },
+    {
+      "owner":"ExampleService","kind":"exported-api","category":"域资源","api":"ExampleContextGet","purpose":"查找指定任务域的资源上下文","test":"核对域名、命中与返回上下文",
+      "coverage":{
+        "cpu":{"status":"used","condition":"所有请求在分支选择前查询","evidence":["mock/entry.cc:10-18"]},
+        "gpu":{"status":"used","condition":"所有请求在分支选择前查询","evidence":["mock/entry.cc:10-18"]},
+        "remote":{"status":"used","condition":"所有请求在分支选择前查询","evidence":["mock/entry.cc:10-18"]}
+      }
+    },
+    {
+      "owner":"ExampleRuntime","kind":"exported-api","category":"执行控制","api":"ExampleDrainQueue","purpose":"清理 CPU 队列本轮未提交的任务","test":"仅清理本轮任务，保留既有任务","special":true,
+      "coverage":{
+        "cpu":{"status":"used","condition":"CPU 编排在提交前失败","evidence":["mock/cpu.cc:80-93"]},
+        "gpu":{"status":"not-used","condition":"GPU 失败由其运行时处理","evidence":["mock/gpu.cc:70-79"]},
+        "remote":{"status":"not-used","condition":"远端失败释放请求对象","evidence":["mock/rpc.cc:85-91"]}
+      }
+    },
+    {
+      "owner":"ExampleService","kind":"exported-api","category":"内存管理","api":"ExampleBufferDescribe","purpose":"获取本地输入 Buffer 的范围描述","test":"核对地址范围与长度",
+      "coverage":{
+        "cpu":{"status":"used","condition":"CPU 本地执行前","evidence":["mock/cpu.cc:20-25"]},
+        "gpu":{"status":"used","condition":"GPU 构造发射参数时","evidence":["mock/gpu.cc:15-23"]},
+        "remote":{"status":"not-used","condition":"远端使用序列化对象，不用本地描述","evidence":["mock/rpc.cc:18-30"]}
+      }
+    },
+    {
+      "owner":"ExampleService","kind":"exported-api","category":"域资源","api":"ExampleContextCreate","purpose":"为缺失的任务域创建资源上下文","test":"核对容量与重复查询复用",
+      "coverage":{
+        "cpu":{"status":"used","condition":"域上下文不存在时","evidence":["mock/entry.cc:19-26"]},
+        "gpu":{"status":"used","condition":"域上下文不存在时","evidence":["mock/entry.cc:19-26"]},
+        "remote":{"status":"used","condition":"域上下文不存在时","evidence":["mock/entry.cc:19-26"]}
+      }
+    },
+    {
+      "owner":"ExampleService","kind":"exported-api","category":"执行控制","api":"ExampleRemoteSubmit","purpose":"将序列化任务提交给远端服务","test":"核对请求与响应匹配",
+      "coverage":{
+        "cpu":{"status":"not-used","condition":"CPU 分支为本地执行","evidence":["mock/dispatch.cc:20-27"]},
+        "gpu":{"status":"not-used","condition":"GPU 分支为本地设备发射","evidence":["mock/dispatch.cc:28-36"]},
+        "remote":{"status":"used","condition":"选择远端路径时","evidence":["mock/dispatch.cc:37-45"]}
+      }
+    },
+    {
+      "owner":"ExampleService","kind":"internal-method","category":"诊断","api":"ExampleDebugProbe","purpose":"读取诊断状态","test":"先补足调用证据，不作为必测命中",
+      "coverage":{
+        "cpu":{"status":"unverified","condition":"只有定义，未追踪调用者"},
+        "gpu":{"status":"unverified","condition":"只有定义，未追踪调用者"},
+        "remote":{"status":"unverified","condition":"只有定义，未追踪调用者"}
+      }
+    }
+  ]
+}
