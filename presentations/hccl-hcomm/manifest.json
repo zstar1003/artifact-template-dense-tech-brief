@@ -1,0 +1,513 @@
+{
+  "schemaVersion": 1,
+  "final": "FINAL_HCOMM_流程与Engine_API测试总表_r2.pptx",
+  "total": 56,
+  "historical": 55,
+  "notes": "仅对部分历史版备注中的本机源码根路径作相对路径规范化，幻灯片和其他 ZIP 成员保持不变。未收录构建候选文件、参考照片、源码或截图。",
+  "files": [
+    {
+      "sourceName": "HCCL_HCOMM_API_Call_Chain_Briefing_v1.pptx",
+      "path": "history/HCCL_HCOMM_API_Call_Chain_Briefing_v1.pptx",
+      "status": "historical",
+      "slides": 3,
+      "bytes": 29600,
+      "sha256": "8b6c78bb4ce22b5ad91a0a2d15b4542789fbb0dc6b5fd18956bceab26a26c144",
+      "notesPathNormalized": false
+    },
+    {
+      "sourceName": "HCCL_HCOMM_API_Call_Chain_Briefing_v2.pptx",
+      "path": "history/HCCL_HCOMM_API_Call_Chain_Briefing_v2.pptx",
+      "status": "historical",
+      "slides": 3,
+      "bytes": 29595,
+      "sha256": "f60179225cca0c4cefbb20913c1dff54465cd228cbb7fcb200c997ed9b0e8678",
+      "notesPathNormalized": false
+    },
+    {
+      "sourceName": "HCCL_HCOMM_API_Call_Chain_Briefing_v3.pptx",
+      "path": "history/HCCL_HCOMM_API_Call_Chain_Briefing_v3.pptx",
+      "status": "historical",
+      "slides": 3,
+      "bytes": 29527,
+      "sha256": "c948d2adb84eabee98d3cc66073dbfadbd1a925752fc3dc8b6d2d7606a82164f",
+      "notesPathNormalized": false
+    },
+    {
+      "sourceName": "HCCL_HCOMM_API_Call_Chain_Briefing_v4.pptx",
+      "path": "history/HCCL_HCOMM_API_Call_Chain_Briefing_v4.pptx",
+      "status": "historical",
+      "slides": 3,
+      "bytes": 29493,
+      "sha256": "feaaeb3f440654fc632f052907b70e06528ec025e890106cc942683d0e0541a7",
+      "notesPathNormalized": false
+    },
+    {
+      "sourceName": "HCCL_HCOMM_API_Call_Chain_Briefing_v5.pptx",
+      "path": "history/HCCL_HCOMM_API_Call_Chain_Briefing_v5.pptx",
+      "status": "historical",
+      "slides": 4,
+      "bytes": 36884,
+      "sha256": "0816458a30ab367ba3a0995e19f5141fd7ddfffdc7c4ad22efc6082824dff478",
+      "notesPathNormalized": false
+    },
+    {
+      "sourceName": "HCCL_HCOMM_API_Call_Chain_Briefing_v6.pptx",
+      "path": "history/HCCL_HCOMM_API_Call_Chain_Briefing_v6.pptx",
+      "status": "historical",
+      "slides": 4,
+      "bytes": 36962,
+      "sha256": "b009c78aa62b2d0535dff43192a773da42c0863462e8f5fc672e1adc4d33f0bb",
+      "notesPathNormalized": false
+    },
+    {
+      "sourceName": "HCCL_HCOMM_API_Call_Chain_Reference_Style_v7.pptx",
+      "path": "history/HCCL_HCOMM_API_Call_Chain_Reference_Style_v7.pptx",
+      "status": "historical",
+      "slides": 4,
+      "bytes": 41699,
+      "sha256": "bf3da87d891b4e492d77c002c8dad5b2ae19970d2da2e1fdefea5a57aafc7103",
+      "notesPathNormalized": false
+    },
+    {
+      "sourceName": "HCCL_HCOMM_API_Call_Chain_Reference_Style_v8.pptx",
+      "path": "history/HCCL_HCOMM_API_Call_Chain_Reference_Style_v8.pptx",
+      "status": "historical",
+      "slides": 4,
+      "bytes": 41849,
+      "sha256": "1b933f321c1317739c5db60524086e05ea37c99be9f2a1dd34c3df200321e41b",
+      "notesPathNormalized": false
+    },
+    {
+      "sourceName": "HCCL_HCOMM_API_Call_Chain_Reference_Style_v9.pptx",
+      "path": "history/HCCL_HCOMM_API_Call_Chain_Reference_Style_v9.pptx",
+      "status": "historical",
+      "slides": 4,
+      "bytes": 41854,
+      "sha256": "620d7cafa6c94a1fa8d0c7c0b2d2bfab5cadbcb061fed12ad3e19ddf487d36f7",
+      "notesPathNormalized": false
+    },
+    {
+      "sourceName": "HCCL_HCOMM_API_Call_Chain_Reference_Style_v10.pptx",
+      "path": "history/HCCL_HCOMM_API_Call_Chain_Reference_Style_v10.pptx",
+      "status": "historical",
+      "slides": 4,
+      "bytes": 41905,
+      "sha256": "68e8488fbeb8456133bd096bbe28df04ea2e54f0dfd484f8c525da364893dda0",
+      "notesPathNormalized": false
+    },
+    {
+      "sourceName": "HCCL_HCOMM_API_Call_Chain_Reference_Style_v11.pptx",
+      "path": "history/HCCL_HCOMM_API_Call_Chain_Reference_Style_v11.pptx",
+      "status": "historical",
+      "slides": 4,
+      "bytes": 41865,
+      "sha256": "522136d11179f736cccb98f68450be2b0c0d59bb0da5970773d4b344c3c6247c",
+      "notesPathNormalized": false
+    },
+    {
+      "sourceName": "HCCL_HCOMM_API_Call_Chain_Annotated_v12.pptx",
+      "path": "history/HCCL_HCOMM_API_Call_Chain_Annotated_v12.pptx",
+      "status": "historical",
+      "slides": 4,
+      "bytes": 49309,
+      "sha256": "a991c8ca55e61eaccace2f11e955efd539efb7ade40ffb65730da1262ada59f0",
+      "notesPathNormalized": false
+    },
+    {
+      "sourceName": "HCCL_HCOMM_API_Call_Chain_Fullwidth_v13.pptx",
+      "path": "history/HCCL_HCOMM_API_Call_Chain_Fullwidth_v13.pptx",
+      "status": "historical",
+      "slides": 4,
+      "bytes": 44357,
+      "sha256": "b5b9a1f3eacfb417804948e16b8c74562c7a896dbd98358b7f62e724afbff52f",
+      "notesPathNormalized": false
+    },
+    {
+      "sourceName": "HCCL_HCOMM_API_Call_Chain_Fullwidth_v14.pptx",
+      "path": "history/HCCL_HCOMM_API_Call_Chain_Fullwidth_v14.pptx",
+      "status": "historical",
+      "slides": 4,
+      "bytes": 44231,
+      "sha256": "a6d77eabbe897adec9381236c59d3be31f97435f36a1ef45857ba439f399d102",
+      "notesPathNormalized": false
+    },
+    {
+      "sourceName": "HCCL_HCOMM_API_Call_Chain_Fullwidth_v15.pptx",
+      "path": "history/HCCL_HCOMM_API_Call_Chain_Fullwidth_v15.pptx",
+      "status": "historical",
+      "slides": 4,
+      "bytes": 44220,
+      "sha256": "6c39a50aca578140252eb05afbb6e9eed1fa0ec3c4608f8e439074e3a8830099",
+      "notesPathNormalized": false
+    },
+    {
+      "sourceName": "HCCL_HCOMM_API_Call_Chain_Engineering_v16.pptx",
+      "path": "history/HCCL_HCOMM_API_Call_Chain_Engineering_v16.pptx",
+      "status": "historical",
+      "slides": 7,
+      "bytes": 69287,
+      "sha256": "4d6692f2765a36052b6fe35b7b6a9bac54e9e90c8870c71f98ada1ecdf939e4e",
+      "notesPathNormalized": false
+    },
+    {
+      "sourceName": "HCCL_HCOMM_API_Call_Chain_Engineering_v17.pptx",
+      "path": "history/HCCL_HCOMM_API_Call_Chain_Engineering_v17.pptx",
+      "status": "historical",
+      "slides": 7,
+      "bytes": 69267,
+      "sha256": "1a30f558e5dd669185b3cc1f2dffbb56b2cd2c3e56e422943c32e50d1a632eaa",
+      "notesPathNormalized": false
+    },
+    {
+      "sourceName": "HCCL_HCOMM_Compact_v18.pptx",
+      "path": "history/HCCL_HCOMM_Compact_v18.pptx",
+      "status": "historical",
+      "slides": 7,
+      "bytes": 82175,
+      "sha256": "e58c835e069324c341bb201013e47c07d6740cc4ca0d82e3ea718a0741c88674",
+      "notesPathNormalized": false
+    },
+    {
+      "sourceName": "HCCL_HCOMM_Compact_v19.pptx",
+      "path": "history/HCCL_HCOMM_Compact_v19.pptx",
+      "status": "historical",
+      "slides": 7,
+      "bytes": 82102,
+      "sha256": "a2fc26d8c475f36b7c61657d42f7996ebb14cfa077e5edcacde49a04d31b9194",
+      "notesPathNormalized": false
+    },
+    {
+      "sourceName": "HCOMM_API_Classification_AICPU_AllToAll_v1.pptx",
+      "path": "history/HCOMM_API_Classification_AICPU_AllToAll_v1.pptx",
+      "status": "historical",
+      "slides": 7,
+      "bytes": 74907,
+      "sha256": "9c4d1d921cf9baadaa2aef44ab0e55e36d54a0d3ea516b9f4c8810f6bd38fa41",
+      "notesPathNormalized": true
+    },
+    {
+      "sourceName": "HCOMM_API_Classification_AICPU_AllToAll_v2.pptx",
+      "path": "history/HCOMM_API_Classification_AICPU_AllToAll_v2.pptx",
+      "status": "historical",
+      "slides": 7,
+      "bytes": 74932,
+      "sha256": "fbfb2ba4fce16e8e16d49304960c8a7fdcb82177e854ea47a7b2a14ffd57269a",
+      "notesPathNormalized": true
+    },
+    {
+      "sourceName": "HCOMM_A_Architecture_r1.pptx",
+      "path": "history/HCOMM_A_Architecture_r1.pptx",
+      "status": "historical",
+      "slides": 7,
+      "bytes": 90398,
+      "sha256": "53cc59e69f3d9f512a5e1e700bde12c25f9c0422b8918a2ad2f1738bfd54b39d",
+      "notesPathNormalized": true
+    },
+    {
+      "sourceName": "HCOMM_B_Technical_Review_r1.pptx",
+      "path": "history/HCOMM_B_Technical_Review_r1.pptx",
+      "status": "historical",
+      "slides": 6,
+      "bytes": 61381,
+      "sha256": "24cab9fd7ce73a60f322163871bba635d995df188c2bb69b4e03fc0fa996a0f9",
+      "notesPathNormalized": true
+    },
+    {
+      "sourceName": "HCOMM_A_Architecture_r2.pptx",
+      "path": "history/HCOMM_A_Architecture_r2.pptx",
+      "status": "historical",
+      "slides": 7,
+      "bytes": 91072,
+      "sha256": "c6b290f33ed8a9815170fc4454ba02edb3b60866006956223736f05b49a50968",
+      "notesPathNormalized": true
+    },
+    {
+      "sourceName": "HCOMM_B_Technical_Review_r2.pptx",
+      "path": "history/HCOMM_B_Technical_Review_r2.pptx",
+      "status": "historical",
+      "slides": 6,
+      "bytes": 61369,
+      "sha256": "eaa9b974661c7f981b31e967cae50133d3cd8e1b0b105ee7732c7df92854cb6f",
+      "notesPathNormalized": true
+    },
+    {
+      "sourceName": "HCOMM_A_Architecture_Detailed_v3.pptx",
+      "path": "history/HCOMM_A_Architecture_Detailed_v3.pptx",
+      "status": "historical",
+      "slides": 9,
+      "bytes": 152913,
+      "sha256": "713ec23e7a2edf6008c716c2c26a97d2a31b5888e09ce9779d0b9613073645e6",
+      "notesPathNormalized": true
+    },
+    {
+      "sourceName": "HCOMM_A_Architecture_Detailed_v4.pptx",
+      "path": "history/HCOMM_A_Architecture_Detailed_v4.pptx",
+      "status": "historical",
+      "slides": 9,
+      "bytes": 153231,
+      "sha256": "59f84a61e1ddd874fd79e8db49bc558b6305d5b5f0dfa6e5b2bea157e9b90f11",
+      "notesPathNormalized": true
+    },
+    {
+      "sourceName": "HCOMM_A_Architecture_Detailed_v5.pptx",
+      "path": "history/HCOMM_A_Architecture_Detailed_v5.pptx",
+      "status": "historical",
+      "slides": 9,
+      "bytes": 153218,
+      "sha256": "1614a643d1cc336ccfa1a4bad8e037c225ca89203a40b227300aa8f5293fd887",
+      "notesPathNormalized": true
+    },
+    {
+      "sourceName": "HCOMM_A_Architecture_Detailed_v6.pptx",
+      "path": "history/HCOMM_A_Architecture_Detailed_v6.pptx",
+      "status": "historical",
+      "slides": 9,
+      "bytes": 153220,
+      "sha256": "e7e5930d339370521e37d10f72164e9647ad328d9e910f8b442cdbeec4888f60",
+      "notesPathNormalized": true
+    },
+    {
+      "sourceName": "HCOMM_A_Architecture_Swimlanes_r1.pptx",
+      "path": "history/HCOMM_A_Architecture_Swimlanes_r1.pptx",
+      "status": "historical",
+      "slides": 9,
+      "bytes": 155859,
+      "sha256": "a4752847480e2bc79559038ab7e27dde8da141938958cd28fe9abacc7c78957d",
+      "notesPathNormalized": true
+    },
+    {
+      "sourceName": "HCOMM_A_Architecture_Swimlanes_r2.pptx",
+      "path": "history/HCOMM_A_Architecture_Swimlanes_r2.pptx",
+      "status": "historical",
+      "slides": 9,
+      "bytes": 156116,
+      "sha256": "4e4c7bea17b0c337533c1e3fabcb5cfd826dc5d0485754980ae6a2ae739c5c27",
+      "notesPathNormalized": true
+    },
+    {
+      "sourceName": "HCOMM_A_Architecture_Swimlanes_r3.pptx",
+      "path": "history/HCOMM_A_Architecture_Swimlanes_r3.pptx",
+      "status": "historical",
+      "slides": 9,
+      "bytes": 156105,
+      "sha256": "0810bbd25d4f5a0e8aefc90436c9f68c78f8aa34a311f53d144cb90165f28a4c",
+      "notesPathNormalized": true
+    },
+    {
+      "sourceName": "HCOMM_AllToAll_逐步讲解_r1.pptx",
+      "path": "history/HCOMM_AllToAll_逐步讲解_r1.pptx",
+      "status": "historical",
+      "slides": 15,
+      "bytes": 163035,
+      "sha256": "16dd3be1c1cdc8b3b684395c80c468078efbf9cb6e1ea8dd1bdb452d3b490188",
+      "notesPathNormalized": false
+    },
+    {
+      "sourceName": "HCOMM_AllToAll_逐步讲解_r2.pptx",
+      "path": "history/HCOMM_AllToAll_逐步讲解_r2.pptx",
+      "status": "historical",
+      "slides": 16,
+      "bytes": 173839,
+      "sha256": "17d42c1bd862c0a00e073ee92452b128703d6915952193389022a2985fb20208",
+      "notesPathNormalized": false
+    },
+    {
+      "sourceName": "HCOMM_AllToAll_一页全流程_r1.pptx",
+      "path": "history/HCOMM_AllToAll_一页全流程_r1.pptx",
+      "status": "historical",
+      "slides": 1,
+      "bytes": 44871,
+      "sha256": "325d37e33e0f7e128378789012749a0e796438a9ad4542d9cc79a4ccae459e67",
+      "notesPathNormalized": false
+    },
+    {
+      "sourceName": "HCOMM_AllToAll_一页全流程_r2.pptx",
+      "path": "history/HCOMM_AllToAll_一页全流程_r2.pptx",
+      "status": "historical",
+      "slides": 1,
+      "bytes": 45691,
+      "sha256": "5129f2ab65d0180152d252b544734b822bf5c39547e27e1bd57c75916e79f295",
+      "notesPathNormalized": false
+    },
+    {
+      "sourceName": "HCOMM_AllToAll_一页全流程_r3.pptx",
+      "path": "history/HCOMM_AllToAll_一页全流程_r3.pptx",
+      "status": "historical",
+      "slides": 1,
+      "bytes": 45665,
+      "sha256": "9e37651630dade6a777d77a476b9a9e25d4d1d5936fe1c688e02dcd1e078d51e",
+      "notesPathNormalized": false
+    },
+    {
+      "sourceName": "HCOMM_AllToAll_一页泳道_r1.pptx",
+      "path": "history/HCOMM_AllToAll_一页泳道_r1.pptx",
+      "status": "historical",
+      "slides": 1,
+      "bytes": 52255,
+      "sha256": "b5230b685ecd83347e8fad8a93eb9406464d5395feada61b3d8ee5e2e5fb0bbd",
+      "notesPathNormalized": false
+    },
+    {
+      "sourceName": "HCOMM_AllToAll_一页泳道_r2.pptx",
+      "path": "history/HCOMM_AllToAll_一页泳道_r2.pptx",
+      "status": "historical",
+      "slides": 1,
+      "bytes": 52370,
+      "sha256": "7cf354f825bdd80a75a770977f0745f6c1fd5082236d5e63227f81b6f87ea616",
+      "notesPathNormalized": false
+    },
+    {
+      "sourceName": "HCOMM_AllToAll_控制数据分层泳道_r1.pptx",
+      "path": "history/HCOMM_AllToAll_控制数据分层泳道_r1.pptx",
+      "status": "historical",
+      "slides": 1,
+      "bytes": 32956,
+      "sha256": "fb460c9dc90d5d138331a81eb68e54adaca62bdd3762524e48195baf64a556d3",
+      "notesPathNormalized": false
+    },
+    {
+      "sourceName": "HCOMM_AllToAll_控制数据分层泳道_r2.pptx",
+      "path": "history/HCOMM_AllToAll_控制数据分层泳道_r2.pptx",
+      "status": "historical",
+      "slides": 1,
+      "bytes": 32997,
+      "sha256": "f7bdcea342d38d1ee9466dc0d0ec63ca3921749222251459fb1b7d4d2e5612e2",
+      "notesPathNormalized": false
+    },
+    {
+      "sourceName": "HCOMM_AllToAll_控制数据分层泳道_r3.pptx",
+      "path": "history/HCOMM_AllToAll_控制数据分层泳道_r3.pptx",
+      "status": "historical",
+      "slides": 1,
+      "bytes": 49610,
+      "sha256": "93204351b78c2c8da03c43161a1cdf5a31a66d2396b8ce57eb4abe6beecc5192",
+      "notesPathNormalized": false
+    },
+    {
+      "sourceName": "HCOMM_AllToAll_总览与分段详解_r1.pptx",
+      "path": "history/HCOMM_AllToAll_总览与分段详解_r1.pptx",
+      "status": "historical",
+      "slides": 9,
+      "bytes": 109165,
+      "sha256": "6a36c1608e01848a96dedaac225d39ef1ad37e5775a5e98c8d878558e01543d6",
+      "notesPathNormalized": false
+    },
+    {
+      "sourceName": "HCOMM_AllToAll_总览与分段详解_r2.pptx",
+      "path": "history/HCOMM_AllToAll_总览与分段详解_r2.pptx",
+      "status": "historical",
+      "slides": 9,
+      "bytes": 110096,
+      "sha256": "9b102d247aa1003d545f064b69766b9e1f9073750ac7bbbbb50f40036143e4c3",
+      "notesPathNormalized": false
+    },
+    {
+      "sourceName": "HCOMM_AllToAll_分层调用泳道_r1.pptx",
+      "path": "history/HCOMM_AllToAll_分层调用泳道_r1.pptx",
+      "status": "historical",
+      "slides": 13,
+      "bytes": 192204,
+      "sha256": "82179805539c619d373f7424835c1148a49be013b91354b8e0465c3cf4967536",
+      "notesPathNormalized": false
+    },
+    {
+      "sourceName": "HCOMM_AllToAll_分层调用泳道_r2.pptx",
+      "path": "history/HCOMM_AllToAll_分层调用泳道_r2.pptx",
+      "status": "historical",
+      "slides": 13,
+      "bytes": 192041,
+      "sha256": "6626862fc03c5a4b22e153c4f9290a13940e90403a59f37697479e7eb8b95500",
+      "notesPathNormalized": false
+    },
+    {
+      "sourceName": "HCOMM_AllToAll_调用关系流程图_r1.pptx",
+      "path": "history/HCOMM_AllToAll_调用关系流程图_r1.pptx",
+      "status": "historical",
+      "slides": 13,
+      "bytes": 154407,
+      "sha256": "99629ddc9d3fe44175f6f5a168711ec2bc91c79477d9541f2d8fa0c6d208995c",
+      "notesPathNormalized": false
+    },
+    {
+      "sourceName": "HCOMM_AllToAll_阶段调用展开图_r1.pptx",
+      "path": "history/HCOMM_AllToAll_阶段调用展开图_r1.pptx",
+      "status": "historical",
+      "slides": 13,
+      "bytes": 177511,
+      "sha256": "169fb3f0cd01b1a9c94c7a45d23e9a51c68619f9d48f34791f116960eb8634c7",
+      "notesPathNormalized": false
+    },
+    {
+      "sourceName": "HCOMM_AllToAll_阶段调用展开图_r2.pptx",
+      "path": "history/HCOMM_AllToAll_阶段调用展开图_r2.pptx",
+      "status": "historical",
+      "slides": 13,
+      "bytes": 178956,
+      "sha256": "fec0ef56beb37a1382364e134d35880b032e7275ddb39f09ec28e37ad12ed77e",
+      "notesPathNormalized": false
+    },
+    {
+      "sourceName": "HCOMM_AllToAll_阶段调用展开图_r3.pptx",
+      "path": "history/HCOMM_AllToAll_阶段调用展开图_r3.pptx",
+      "status": "historical",
+      "slides": 13,
+      "bytes": 178751,
+      "sha256": "5ecd82156f9f0960eef244a79d7a9b3f28dfa54636013f4f8d6793d7c6ff7c09",
+      "notesPathNormalized": false
+    },
+    {
+      "sourceName": "HCOMM_算子流程与API测试总表_r1.pptx",
+      "path": "history/HCOMM_算子流程与API测试总表_r1.pptx",
+      "status": "historical",
+      "slides": 20,
+      "bytes": 238384,
+      "sha256": "3c78a871a44c590519b82f1a9cbe2f6eefc83b6cf7358775bf30d1a29096daf0",
+      "notesPathNormalized": false
+    },
+    {
+      "sourceName": "HCOMM_算子流程与API测试总表_r2.pptx",
+      "path": "history/HCOMM_算子流程与API测试总表_r2.pptx",
+      "status": "historical",
+      "slides": 20,
+      "bytes": 238452,
+      "sha256": "1d5da6cbcf994367c3e03c657c79096a18a5570ed623a72b37228b0cb0ad682f",
+      "notesPathNormalized": false
+    },
+    {
+      "sourceName": "HCOMM_算子流程与API测试总表_r3.pptx",
+      "path": "history/HCOMM_算子流程与API测试总表_r3.pptx",
+      "status": "historical",
+      "slides": 20,
+      "bytes": 238915,
+      "sha256": "ae8617edea8c070ef3098d246fa6b797098f1afbfb56135ff1b4eaf9c5ba79dd",
+      "notesPathNormalized": false
+    },
+    {
+      "sourceName": "HCOMM_算子流程与API测试总表_r4.pptx",
+      "path": "history/HCOMM_算子流程与API测试总表_r4.pptx",
+      "status": "historical",
+      "slides": 20,
+      "bytes": 239001,
+      "sha256": "cc0dfe60fe4ce29b586cb73c7872cf7d55a83eebd737772af70909a7d0d3e289",
+      "notesPathNormalized": false
+    },
+    {
+      "sourceName": "HCOMM_流程与Engine_API测试总表_r1.pptx",
+      "path": "history/HCOMM_流程与Engine_API测试总表_r1.pptx",
+      "status": "historical",
+      "slides": 23,
+      "bytes": 262781,
+      "sha256": "0e43ff1aa1ab8d0985bc84226d37c1937a91866e60aebc06a772dfc05937fb1f",
+      "notesPathNormalized": false
+    },
+    {
+      "sourceName": "HCOMM_流程与Engine_API测试总表_r2.pptx",
+      "path": "FINAL_HCOMM_流程与Engine_API测试总表_r2.pptx",
+      "status": "final",
+      "slides": 23,
+      "bytes": 264485,
+      "sha256": "3dcd029bbdd1f697366adbe44631e5c2f57c19b41061a5b7398d6933dc27caaf",
+      "notesPathNormalized": false
+    }
+  ]
+}

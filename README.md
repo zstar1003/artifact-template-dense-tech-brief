@@ -13,6 +13,12 @@
 
 `✓` 只表示条件路径涉及，不是每次必调。创建、版本、兼容等条件直接写中文，不使用 `✓冷` 等复合符号。证据不足写“待核”，不擅自打勾或划横线。
 
+## 本次 PPT 归档
+
+[HCCL / HCOMM PPT 归档](presentations/hccl-hcomm/README.md)收录本轮已交付的 56 份 PPT：最终版置顶，其余 55 份放在 `history/`。最终版为 **[FINAL · 流程与 Engine API 测试总表 r2（23 页）](presentations/hccl-hcomm/FINAL_HCOMM_流程与Engine_API测试总表_r2.pptx)**。
+
+历史版仅用于回溯，技术结论优先参考最终版及其适用范围。归档不包含用户上传的参考照片，也不改变 Skill 的默认参考模板。
+
 ![软件栈与调用边界参考页](assets/preview.png)
 
 ## 风格约定
@@ -78,6 +84,7 @@ assets/reference.pptx            完整 7 页可编辑参考，含讲解备注
 assets/preview.png               首屏参考
 assets/layouts/                  调用树、能力矩阵和执行路径参考
 skills/technical-flow-brief/     独立流程讲解 Skill，含矩阵校验器与虚构示例
+presentations/hccl-hcomm/         本轮 PPT 归档，含 FINAL 最终版与历史版本
 ```
 
 新 Skill 的矩阵校验器使用 Node.js 内置模块，无第三方依赖：
@@ -109,4 +116,4 @@ node skills/technical-flow-brief/scripts/api-matrix.mjs skills/technical-flow-br
 
 换主题时保留视觉组织方式，替换业务内容与来源；不固定为参考文件的 7 页，也不复制原主题的结论。此技能并非上述项目的官方模板。
 
-历史参考文件保留不变，新版讲解和配色规则以 Skill 文本为准。此次新增仅包含抽象规则、通用校验代码与虚构样例；不包含参考照片、原照裁切、新的业务报告或本机源码分析输出。
+历史模板参考文件保留不变，新版讲解和配色规则以 Skill 文本为准。Skill 方法包包含抽象规则、通用校验代码与虚构样例；经用户授权公开的本轮技术汇报 PPT 单独放在 `presentations/hccl-hcomm/`。两者均不包含用户参考照片或原照裁切，公开副本不保留本机绝对路径。
