@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "final": "FINAL_HCCL_AICPU_决策地图_算法释义与回退说明.pptx",
+  "slideCount": 18,
+  "sha256": "5c10751dc39de6ff0755ec1ba1233c6993bd950a5ba304a1a20957371aa99fbc",
+  "bytes": 379091,
+  "sourceRevisions": {
+    "hccl": "170ddeec539b4d693028ce6e0cf5c58933e4d46d",
+    "hcomm": "87ce550f8f7c584e0ed89b0ec56699553d9c332d"
+  },
+  "algorithmLeafNames": 32,
+  "operatorAlgorithmPairs": 82
+}
