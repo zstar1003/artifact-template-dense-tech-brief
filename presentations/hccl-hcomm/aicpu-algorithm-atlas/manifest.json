@@ -1,13 +1,28 @@
 {
   "schemaVersion": 1,
-  "final": "FINAL_HCCL_AICPU_决策地图_算法释义与回退说明.pptx",
-  "slideCount": 18,
-  "sha256": "5c10751dc39de6ff0755ec1ba1233c6993bd950a5ba304a1a20957371aa99fbc",
-  "bytes": 379091,
+  "final": "FINAL_HCCL_AICPU_决策地图_算法释义与选型规律_24页.pptx",
+  "slideCount": 24,
+  "sha256": "a00ee0c6819a7249daa39f7de6e52f7aa458d0ebaec4ec16e80584981eeba72f",
+  "bytes": 413236,
   "sourceRevisions": {
     "hccl": "170ddeec539b4d693028ce6e0cf5c58933e4d46d",
     "hcomm": "87ce550f8f7c584e0ed89b0ec56699553d9c332d"
   },
   "algorithmLeafNames": 32,
-  "operatorAlgorithmPairs": 82
+  "operatorAlgorithmPairs": 82,
+  "previousVersions": [
+    {
+      "file": "FINAL_HCCL_AICPU_决策地图_算法释义与回退说明.pptx",
+      "slideCount": 18,
+      "sha256": "5c10751dc39de6ff0755ec1ba1233c6993bd950a5ba304a1a20957371aa99fbc"
+    }
+  ],
+  "appendedPages": {
+    "19": "选型规律总览",
+    "20": "拓扑规模与形状",
+    "21": "数据量与rank二维分区",
+    "22": "不同算子的切换规律",
+    "23": "性能机制与带宽估算",
+    "24": "关联结论与验证方法"
+  }
 }
